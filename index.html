@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/NatureInstinct.ico" />
-    <title>Nature instinct</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Nature Instinct</title>
   </head>
   <body>
     <header>
+      <!-- LOGO ASSOCIATION -->
       <img
         src="/images/LogoNatureInstinct.png"
         alt="Logo de l'association Nature Instinct"
+        id="logo"
       />
+      <!-- NAVBAR -->
       <nav>
         <li><a href="/index.html">Accueil</a></li>
         <li><a href="/activities.html">Activités</a></li>
@@ -20,6 +25,7 @@
       </nav>
     </header>
     <main>
+      <!-- PRESENTATION -->
       <section id="Home">
         <article>
           <h1>Ensemble, réveillons notre nature</h1>
@@ -35,25 +41,72 @@
             avec le vivant, nous pouvons bâtir un avenir plus équilibré et
             responsable.
           </p>
+          <img src="/images/couv.jpg" id="cover" />
         </article>
       </section>
+      <!-- TO ACTIVITIES PAGE -->
       <section id="activities">
         <h2>Vos actions feront la différence !</h2>
-        <p>
-          Découvrez nos activités et rejoignez-nous pour faire la différence.
-        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>Ateliers de sensibilisation</h3>
+            <p>
+              Participez à nos ateliers éducatifs pour mieux comprendre les
+              enjeux environnementaux.
+            </p>
+            <a href="/activities.html">Nos activités</a>
+          </article>
+        </div>
       </section>
+
+      <!-- TO ACTUALITIES PAGE -->
       <section id="actualities">
         <h2>Suivez nos projets</h2>
-        <p>Nos actualités, c'est par ici !</p>
+        <div class="cards">
+          <article class="card">
+            <p>Nos actualités, c'est par ici !</p>
+            <a href="/actualities.html">Nos actualités</a>
+          </article>
+        </div>
       </section>
+      <!-- TO CONTACT PAGE -->
       <section id="contact">
         <h2>Ensemble on va plus loin !</h2>
-        <p>Vous souhaitez nous rejoindre ? Accédez à notre page contact.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Rejoignez-nous</h3>
+            <p>
+              Envie de contribuer ? Découvrez notre page contact et devenez
+              bénévole. <br />
+            </p>
+            <a href="/contact.html">Formulaire de contact</a>
+          </article>
+          <article class="card">
+            <h3>Suivez-nous</h3>
+            <p>
+              Retrouvez Nature Instinct sur Facebook et Instagram pour suivre
+              nos actions.
+            </p>
+            <a href="#">
+              <img
+                src="/images/logo-facebook.png"
+                alt="Logo Facebook"
+                id="facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="/images/Instagram_icon.png.webp"
+                alt="Logo Instagram"
+                id="instagram"
+              />
+            </a>
+          </article>
+        </div>
       </section>
     </main>
     <footer>
-      <p>&copy; 2025 Nature Instinct – Ensemble pour la planète 🌱</p>
+      <p>&copy; 2025 Nature Instinct – Ensemble pour la planète</p>
       <a href="#">
         <img src="/images/logo-facebook.png" alt="Logo Facebook" />
       </a>
