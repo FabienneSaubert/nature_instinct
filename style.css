@@ -13,13 +13,12 @@ body {
 
 /* HEADER */
 header {
-  background: #90c6ae;
+  background-image: url("/images/images_index/headercover.jpg");
+  background-size: cover;
   color: white;
   padding: 16px 32px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 #logo {
@@ -28,19 +27,21 @@ header {
 
 nav {
   display: flex;
-  gap: 24px;
+  gap: 60px;
   list-style: none;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 nav a {
-  color: white;
+  color: #006925;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: #006925;
+  color: rgb(108, 179, 0);
 }
 /* ------------------------------------------------------------------------------ */
 
@@ -93,6 +94,18 @@ p {
   transition: transform 0.3s ease;
 }
 
+#actions {
+  margin-top: 80px;
+}
+
+#projects {
+  margin-top: 40px;
+}
+
+#together {
+  margin-top: 90px;
+}
+
 #Home {
   background: #fff;
   border-radius: 12px;
@@ -103,8 +116,6 @@ p {
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
 }
@@ -123,7 +134,7 @@ p {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 14px rgba(0, 99, 35, 0.209);
 }
 
 .card h3 {
@@ -153,7 +164,17 @@ p {
   gap: 40px;
 }
 
+time {
+  font-style: italic;
+  color: grey;
+}
+
 /* ==== Article ==== */
+.news-item {
+  box-shadow: 0 6px 14px rgba(0, 99, 35, 0.209);
+  padding: 15px;
+}
+
 .news-item h3 {
   font-size: 24px;
   color: #2d6a4f;
@@ -176,6 +197,11 @@ p {
 }
 
 /* ==== Liens partenaires ==== */
+.partenaire {
+  width: 100%;
+  justify-items: center;
+}
+
 .news-item .partenaire {
   display: inline-block;
   margin: 6px 10px 0 0;
@@ -196,17 +222,13 @@ p {
 /* ACTIVITIES PAGE */
 
 /* ==== Section Activités ==== */
-#activities {
+.activities {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px;
   max-width: 1200px;
-  margin: 32px auto;
+  margin: 32px;
   padding: 0 16px;
-}
-
-#activities:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ==== Carte activités ==== */
@@ -219,11 +241,12 @@ p {
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 15px;
+  text-align: center;
 }
 
 .activity:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px rgba(0, 94, 10, 0.182);
 }
 
 .activity h3 {
