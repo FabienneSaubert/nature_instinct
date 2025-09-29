@@ -273,8 +273,101 @@ time {
 }
 /* -------------------------------------------------------------------------------- */
 /* CONTACT PAGE */
+/* SECTION FORMULAIRE */
 #form {
-  margin: 15px;
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#form h3 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2d5a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2d5a4a;
+}
+
+/* Champs du formulaire */
+form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form label {
+  font-weight: bold;
+  color: #2d5a4a;
+}
+
+legend {
+  color: #2d5a4a;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Focus input */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #90c6ae;
+  box-shadow: 0 0 5px rgba(144, 198, 174, 0.5);
+  outline: none;
+}
+
+/* Buttons */
+form #send,
+form #reset {
+  margin-right: 16px;
+}
+
+/* Boutons */
+#send,
+#reset {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 16px;
+  transition: transform 0.2s ease, background 0.3s ease;
+  margin-top: 16px;
+}
+
+#send {
+  background: #2d5a4a;
+  color: white;
+}
+
+#send:hover {
+  background: #90c6ae;
+  transform: scale(1.05);
+}
+
+#reset {
+  background: #ccc;
+  color: #333;
+}
+
+#reset:hover {
+  background: #bbb;
+  transform: scale(1.05);
 }
 
 /* ------------------------------------------------------------------------------- */

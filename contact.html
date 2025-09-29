@@ -30,32 +30,54 @@
       <form method="post" name="contact">
         <fieldset>
           <label for="name" id="name">Nom :</label>
-          <input type="text" name="name" required />
+          <input
+            type="text"
+            name="name"
+            placeholder="Entrez votre nom"
+            required
+          />
         </fieldset>
         <br />
 
         <fieldset>
           <label for="prenom" id="prenom">Prénom :</label>
-          <input type="text" name="prenom" required />
+          <input
+            type="text"
+            name="prenom"
+            placeholder="Entrez votre prénom"
+            required
+          />
         </fieldset>
         <br />
 
         <fieldset>
           <label for="email">Email :</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemple@exemple.com"
+            required
+          />
         </fieldset>
         <br />
 
         <!-- Message -->
         <fieldset>
-          <legend>Votre message :</legend>
-          <textarea name="message" rows="4" cols="50" required></textarea>
+          <legend id="message">Votre message :</legend>
+          <textarea
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Saisissez votre message"
+            required
+          ></textarea>
         </fieldset>
         <br />
 
-        <!-- Radio poste -->
+        <!-- Checkbox -->
         <fieldset>
-          <legend>Vos disponibilités pour l'association :</legend>
+          <h3>Vos disponibilités pour l'association :</h3>
           <input id="lundi" type="checkbox" />
           <label for="lundi">Lundi</label>
           <input id="mardi" type="checkbox" />
@@ -71,10 +93,9 @@
           <input id="dimanche" type="checkbox" />
           <label for="dimanche">dimanche</label>
         </fieldset>
-        <br />
 
-        <input type="submit" value="Envoyer" />
-        <input type="reset" value="Reset" />
+        <input type="submit" value="Envoyer" id="send" />
+        <input type="reset" value="Reset" id="reset" />
       </form>
     </section>
 
