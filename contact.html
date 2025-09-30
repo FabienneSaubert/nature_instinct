@@ -18,10 +18,12 @@
       />
       <!-- NAVBAR -->
       <nav>
-        <li><a href="/index.html">Accueil</a></li>
-        <li><a href="/activities.html">Activités</a></li>
-        <li><a href="/actualities.html">Actualités</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/activities.html">Activités</a></li>
+          <li><a href="/actualities.html">Actualités</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -29,8 +31,9 @@
     <section id="form">
       <form method="post" name="contact">
         <fieldset>
-          <label for="name" id="name">Nom :</label>
+          <label for="name">Nom :</label>
           <input
+            id="name"
             type="text"
             name="name"
             placeholder="Entrez votre nom"
@@ -40,8 +43,9 @@
         <br />
 
         <fieldset>
-          <label for="prenom" id="prenom">Prénom :</label>
+          <label for="prenom">Prénom :</label>
           <input
+            id="prenom"
             type="text"
             name="prenom"
             placeholder="Entrez votre prénom"
@@ -53,6 +57,7 @@
         <fieldset>
           <label for="email">Email :</label>
           <input
+            id="email"
             type="email"
             id="email"
             name="email"
