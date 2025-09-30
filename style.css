@@ -25,6 +25,7 @@ header {
   height: 150px;
 }
 
+/* NAVBAR */
 nav {
   display: flex;
   gap: 60px;
@@ -43,7 +44,6 @@ nav a {
 nav a:hover {
   color: rgb(108, 179, 0);
 }
-/* ------------------------------------------------------------------------------ */
 
 /* Section principale */
 main {
@@ -83,7 +83,7 @@ p {
   height: auto;
 }
 
-/* EFFET DE SURVOL SUR LOGO CARD */
+/* EFFET DE SURVOL SUR LOGO CARD ACCUEIL */
 .card #facebook:hover {
   transform: rotate(10deg) scale(1.1);
   transition: transform 0.3s ease;
@@ -145,7 +145,7 @@ p {
 /* ------------------------------------------------------------------------------- */
 /* ACTUALITIES PAGE  */
 
-/* ==== Liste des actualités ==== */
+/* Liste des actualités */
 #sea {
   width: 200px;
 }
@@ -169,7 +169,7 @@ time {
   color: grey;
 }
 
-/* ==== Article ==== */
+/* Articles */
 .news-item {
   box-shadow: 0 6px 14px rgba(0, 99, 35, 0.209);
   padding: 15px;
@@ -187,7 +187,7 @@ time {
   text-align: justify;
 }
 
-/* ==== Images intégrées ==== */
+/* Images intégrées */
 .news-item img {
   display: block;
   max-width: 100%;
@@ -196,7 +196,7 @@ time {
   border-radius: 8px;
 }
 
-/* ==== Liens partenaires ==== */
+/* Liens partenaires */
 .partenaire {
   width: 100%;
   justify-items: center;
@@ -219,9 +219,9 @@ time {
   color: #fff;
 }
 
-/* ACTIVITIES PAGE */
+/* ACTIVITIES PAGE----------------------------------------------------------- */
 
-/* ==== Section Activités ==== */
+/* Section Activités */
 .activities {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -231,7 +231,7 @@ time {
   padding: 0 16px;
 }
 
-/* ==== Carte activités ==== */
+/* Carte activités */
 .activity {
   background: #fff;
   border-radius: 15px;
@@ -262,7 +262,7 @@ time {
   text-align: justify;
 }
 
-/* ==== Images dans les cartes ==== */
+/* Images dans les cartes */
 .activity img {
   width: 100%;
   height: auto;
@@ -271,9 +271,10 @@ time {
   border-radius: 0 0 15px 15px;
   margin-top: 16px;
 }
-/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 /* CONTACT PAGE */
 /* SECTION FORMULAIRE */
+
 #form {
   max-width: 800px;
   margin: 15px auto;
@@ -337,7 +338,15 @@ form #reset {
   margin-right: 16px;
 }
 
-/* Boutons */
+#checkbox {
+  display: inline-block;
+}
+
+#checkbox input {
+  margin: 15px;
+}
+
+/* Boutons === impossible à centrer sans <div 😣 */
 #send,
 #reset {
   padding: 10px 24px;
@@ -370,7 +379,7 @@ form #reset {
   transform: scale(1.05);
 }
 
-/* ------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 /* FOOTER */
 footer {
   background: #90c6ae;
