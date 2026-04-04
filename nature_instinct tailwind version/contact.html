@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/NatureInstinct.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Nature Instinct</title>
+  </head>
+  <body>
+    <header>
+      <!-- LOGO ASSOCIATION -->
+      <img
+        src="/images/LogoNatureInstinct.png"
+        alt="Logo de l'association Nature Instinct"
+        id="logo"
+      />
+      <!-- NAVBAR -->
+      <nav>
+        <li><a href="/index.html">Accueil</a></li>
+        <li><a href="/activities.html">Activités</a></li>
+        <li><a href="/actualities.html">Actualités</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </nav>
+    </header>
+
+    <!-- Formulaire de contact -->
+    <section id="form">
+      <form method="post" name="contact">
+        <fieldset>
+          <label for="name" id="name">Nom :</label>
+          <input type="text" name="name" required />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <label for="prenom" id="prenom">Prénom :</label>
+          <input type="text" name="prenom" required />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+        </fieldset>
+        <br />
+
+        <!-- Message -->
+        <fieldset>
+          <legend>Votre message :</legend>
+          <textarea name="message" rows="4" cols="50" required></textarea>
+        </fieldset>
+        <br />
+
+        <!-- Radio poste -->
+        <fieldset>
+          <legend>Vos disponibilités pour l'association :</legend>
+          <input id="lundi" type="checkbox" />
+          <label for="lundi">Lundi</label>
+          <input id="mardi" type="checkbox" />
+          <label for="mardi">Mardi</label>
+          <input id="mercredi" type="checkbox" />
+          <label for="mercredi">Mercredi</label>
+          <input id="jeudi" type="checkbox" />
+          <label for="jeudi">Jeudi</label>
+          <input id="vendredi" type="checkbox" />
+          <label for="vendredi">Vendredi</label>
+          <input id="samedi" type="checkbox" />
+          <label for="samedi">Samedi</label>
+          <input id="dimanche" type="checkbox" />
+          <label for="dimanche">dimanche</label>
+        </fieldset>
+        <br />
+
+        <input type="submit" value="Envoyer" />
+        <input type="reset" value="Reset" />
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Nature Instinct – Ensemble pour la planète</p>
+    </footer>
+  </body>
+</html>
