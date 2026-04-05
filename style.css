@@ -437,6 +437,14 @@ footer {
   padding-top: 10px;
 }
 
+footer p {
+  color: black;
+}
+
+time {
+  color: black;
+}
+
 footer a img {
   height: 30px;
   margin: 5px;
