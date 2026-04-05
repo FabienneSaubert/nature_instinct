@@ -1,25 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/NatureInstinct.ico" />
     <link rel="stylesheet" href="/style.css" />
-
-    <title>Nature Instinct</title>
+    <title>Nature Instinct - Contact</title>
   </head>
   <body>
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link"> Aller au contenu principal </a>
+
     <header>
-      <!-- LOGO ASSOCIATION -->
-      <img
-        src="/images/LogoNatureInstinct.png"
-        alt="Logo de l'association Nature Instinct"
-        id="logo"
-      />
-      <!-- NAVBAR -->
-      <nav>
+      <div class="logo">
+        <a href="/index.html">
+          <img
+            src="/images/LogoNatureInstinct.png"
+            alt="Accueil - Nature Instinct"
+            class="logo"
+          />
+        </a>
+      </div>
+
+      <nav aria-label="Navigation principale">
         <ul>
-          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/index.html" aria-current="page">Accueil</a></li>
           <li><a href="/activities.html">Activités</a></li>
           <li><a href="/actualities.html">Actualités</a></li>
           <li><a href="/contact.html">Contact</a></li>
@@ -27,92 +33,128 @@
       </nav>
     </header>
 
-    <!-- Formulaire de contact -->
-    <section id="form">
-      <form method="post" name="contact">
-        <fieldset>
-          <label for="name">Nom :</label>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Entrez votre nom"
-            required
-          />
-        </fieldset>
-        <br />
+    <main id="main-content">
+      <section id="form" aria-labelledby="contact-title">
+        <h1 id="contact-title">Formulaire de contact</h1>
 
-        <fieldset>
-          <label for="prenom">Prénom :</label>
-          <input
-            id="prenom"
-            type="text"
-            name="prenom"
-            placeholder="Entrez votre prénom"
-            required
-          />
-        </fieldset>
-        <br />
+        <form method="post" name="contact">
+          <!-- IDENTITÉ -->
+          <fieldset>
+            <label for="name">Nom</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              autocomplete="family-name"
+              required
+            />
 
-        <fieldset>
-          <label for="email">Email :</label>
-          <input
-            id="email"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="exemple@exemple.com"
-            required
-          />
-        </fieldset>
-        <br />
+            <label for="prenom">Prénom</label>
+            <input
+              id="prenom"
+              type="text"
+              name="prenom"
+              autocomplete="given-name"
+              required
+            />
 
-        <!-- Message -->
-        <fieldset>
-          <legend id="message">Votre message :</legend>
-          <textarea
-            name="message"
-            rows="4"
-            cols="50"
-            placeholder="Saisissez votre message"
-            required
-          ></textarea>
-        </fieldset>
-        <br />
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </fieldset>
 
-        <!-- Checkbox -->
-        <fieldset id="checkbox">
-          <h3>Vos disponibilités pour l'association :</h3>
-          <input id="lundi" type="checkbox" />
-          <label for="lundi">Lundi</label>
-          <input id="mardi" type="checkbox" />
-          <label for="mardi">Mardi</label>
-          <input id="mercredi" type="checkbox" />
-          <label for="mercredi">Mercredi</label>
-          <input id="jeudi" type="checkbox" />
-          <label for="jeudi">Jeudi</label>
-          <input id="vendredi" type="checkbox" />
-          <label for="vendredi">Vendredi</label>
-          <input id="samedi" type="checkbox" />
-          <label for="samedi">Samedi</label>
-          <input id="dimanche" type="checkbox" />
-          <label for="dimanche">dimanche</label>
-        </fieldset>
+          <!-- MESSAGE -->
+          <fieldset>
+            <legend>Votre message</legend>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </fieldset>
 
-        <input type="submit" value="Envoyer" id="send" />
-        <input type="reset" value="Reset" id="reset" />
-      </form>
-    </section>
+          <!-- DISPONIBILITÉS -->
+          <fieldset>
+            <legend>Vos disponibilités pour l'association</legend>
+            <div id="checkbox">
+              <input
+                id="lundi"
+                type="checkbox"
+                name="disponibilites"
+                value="lundi"
+              />
+              <label for="lundi">Lundi</label>
 
-    <!-- Footer -->
+              <input
+                id="mardi"
+                type="checkbox"
+                name="disponibilites"
+                value="mardi"
+              />
+              <label for="mardi">Mardi</label>
+
+              <input
+                id="mercredi"
+                type="checkbox"
+                name="disponibilites"
+                value="mercredi"
+              />
+              <label for="mercredi">Mercredi</label>
+
+              <input
+                id="jeudi"
+                type="checkbox"
+                name="disponibilites"
+                value="jeudi"
+              />
+              <label for="jeudi">Jeudi</label>
+
+              <input
+                id="vendredi"
+                type="checkbox"
+                name="disponibilites"
+                value="vendredi"
+              />
+              <label for="vendredi">Vendredi</label>
+
+              <input
+                id="samedi"
+                type="checkbox"
+                name="disponibilites"
+                value="samedi"
+              />
+              <label for="samedi">Samedi</label>
+
+              <input
+                id="dimanche"
+                type="checkbox"
+                name="disponibilites"
+                value="dimanche"
+              />
+              <label for="dimanche">Dimanche</label>
+            </div>
+          </fieldset>
+          <!-- BOUTONS -->
+          <div class="button">
+            <button type="submit" id="send">Envoyer</button>
+            <button type="reset" id="reset">Réinitialiser</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
     <footer>
       <p>&copy; 2025 Nature Instinct – Ensemble, on est plusieurs</p>
-      <a href="#">
-        <img src="/images/logo-facebook.png" alt="Logo Facebook" />
-      </a>
-      <a href="#">
-        <img src="/images/Instagram_icon.png.webp" alt="Logo Instagram" />
-      </a>
+
+      <nav aria-label="Réseaux sociaux">
+        <a href="#" aria-label="Facebook Nature Instinct">
+          <img src="/images/logo-facebook.png" alt="" />
+        </a>
+        <a href="#" aria-label="Instagram Nature Instinct">
+          <img src="/images/Instagram_icon.png.webp" alt="" />
+        </a>
+      </nav>
     </footer>
   </body>
 </html>
