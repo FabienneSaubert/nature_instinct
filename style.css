@@ -387,7 +387,6 @@ form #reset {
   margin: 15px;
 }
 
-/* Boutons === impossible à centrer sans <div 😣 */
 #send,
 #reset {
   padding: 10px 24px;
@@ -420,6 +419,13 @@ form #reset {
 #reset:hover {
   background: #bbb;
   transform: scale(1.05);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 /* -------------------------------------------------------------------------- */
