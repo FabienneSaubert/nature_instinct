@@ -26,7 +26,7 @@ header {
   width: 100%;
 }
 
-#logo {
+.logo {
   height: 150px;
   position: absolute;
   left: 32px;
@@ -37,10 +37,10 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 60px;
-  width: 100%;
-  justify-content: space-evenly;
-  gap: 200px;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -52,6 +52,24 @@ nav a {
 
 nav a:hover {
   color: rgb(108, 179, 0);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    /* flex-direction: column; */
+    gap: 16px;
+  }
+
+  header {
+    /* flex-direction: column; */
+    height: auto;
+    padding: 16px;
+  }
+
+  .logo {
+    position: static;
+    margin-bottom: 10px;
+  }
 }
 
 /* Section principale */
@@ -138,7 +156,9 @@ p {
   padding: 24px;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -209,6 +229,7 @@ time {
 .partenaire {
   width: 100%;
   justify-items: center;
+  list-style: none;
 }
 
 .news-item .partenaire {
@@ -248,7 +269,9 @@ time {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   margin: 15px;
   text-align: center;
 }
@@ -279,6 +302,15 @@ time {
   border-top: 1px solid #eee;
   border-radius: 0 0 15px 15px;
   margin-top: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 /* -------------------------------------------------------------------------- */
 /* CONTACT PAGE */
@@ -364,7 +396,9 @@ form #reset {
   font-size: 16px;
   cursor: pointer;
   margin-right: 16px;
-  transition: transform 0.2s ease, background 0.3s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.3s ease;
   margin-top: 16px;
 }
 

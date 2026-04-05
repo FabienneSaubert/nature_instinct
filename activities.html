@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -10,97 +10,94 @@
   </head>
   <body>
     <header>
-      <!-- LOGO ASSOCIATION -->
-      <img
-        src="/images/LogoNatureInstinct.png"
-        alt="Logo de l'association Nature Instinct"
-        id="logo"
-      />
-      <!-- NAVBAR -->
-      <nav>
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="/index.html">
+          <img
+            src="/images/LogoNatureInstinct.png"
+            alt="Accueil - Nature Instinct"
+            class="logo"
+          />
+        </a>
+      </div>
+      <!-- NAVIGATION -->
+      <nav aria-label="Navigation principale">
         <ul>
           <li><a href="/index.html">Accueil</a></li>
-          <li><a href="/activities.html">Activités</a></li>
+          <li><a href="/activities.html" aria-current="page">Activités</a></li>
           <li><a href="/actualities.html">Actualités</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <article>
-        <h1>Nos activités pour protéger et valoriser la nature</h1>
-      </article>
+    <main id="main-content">
+      <h1>Nos activités pour protéger et valoriser la nature</h1>
 
-      <section class="activities">
+      <section class="activities" aria-labelledby="activities-title">
+        <h2 id="activities-title" class="visually-hidden">
+          Liste des activités
+        </h2>
         <article class="activity">
           <h3>Ateliers de sensibilisation</h3>
           <p>
             Organisation d’ateliers éducatifs pour les écoles et le grand public
             afin de mieux comprendre les enjeux environnementaux.
-            <img
-              src="/images/images_activities/developpement-durable.jpg"
-              alt="Image d'une main tenant une plante dans une sphère"
-            />
           </p>
+          <img
+            src="/images/images_activities/developpement-durable.jpg"
+            alt="Main tenant une plante symbolisant le développement durable"
+          />
         </article>
-
         <article class="activity">
           <h3>Nettoyage de la nature</h3>
           <p>
             Actions collectives de ramassage de déchets dans les forêts, parcs
             et zones naturelles.
-            <img
-              src="/images/images_activities/nettoyage.jpg"
-              alt="Photo de la collecte de déchet en nature"
-            />
           </p>
+          <img
+            src="/images/images_activities/nettoyage.jpg"
+            alt="Collecte de déchets en pleine nature"
+          />
         </article>
-
         <article class="activity">
           <h3>Protection de la biodiversité</h3>
-          <p>
-            Mise en place de projets de préservation des habitats naturels et
-            soutien aux initiatives locales de sauvegarde des espèces.
-            <img
-              src="/images/images_activities/biodiversite.webp"
-              alt="Photo de la plantation d'un arbre"
-            />
-          </p>
+          <p>Mise en place de projets de préservation des habitats naturels.</p>
+          <img
+            src="/images/images_activities/biodiversite.webp"
+            alt="Plantation d’un arbre pour préserver la biodiversité"
+          />
         </article>
-
         <article class="activity">
           <h3>Jardinage écologique</h3>
           <p>
-            Création de jardins partagés et promotion de pratiques respectueuses
-            de l’environnement (permaculture, compostage, etc.).
-            <img
-              src="/images/images_activities/potager.jpg"
-              alt="Photo de la journée de jardinage écologique"
-            />
+            Création de jardins partagés et pratiques respectueuses de
+            l’environnement.
           </p>
+          <img
+            src="/images/images_activities/potager.jpg"
+            alt="Jardinage écologique dans un potager"
+          />
         </article>
-
         <article class="activity">
           <h3>Événements et conférences</h3>
-          <p>
-            Organisation de rencontres, conférences et sorties nature pour
-            renforcer le lien entre l’humain et son environnement.
-            <img
-              src="/images/images_activities/Conférence.jpg"
-              alt="Photo de la conférence sur la biodiversité"
-            />
-          </p>
+          <p>Organisation de rencontres et conférences autour de la nature.</p>
+          <img
+            src="/images/images_activities/Conférence.jpg"
+            alt="Conférence sur la biodiversité"
+          />
         </article>
       </section>
     </main>
     <footer>
       <p>&copy; 2025 Nature Instinct – Ensemble, on est plusieurs</p>
-      <a href="#">
-        <img src="/images/logo-facebook.png" alt="Logo Facebook" />
-      </a>
-      <a href="#">
-        <img src="/images/Instagram_icon.png.webp" alt="Logo Instagram" />
-      </a>
+      <nav aria-label="Réseaux sociaux">
+        <a href="#" aria-label="Facebook Nature Instinct">
+          <img src="/images/logo-facebook.png" alt="" />
+        </a>
+        <a href="#" aria-label="Instagram Nature Instinct">
+          <img src="/images/Instagram_icon.png.webp" alt="" />
+        </a>
+      </nav>
     </footer>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -11,15 +11,19 @@
   <body>
     <header>
       <!-- LOGO ASSOCIATION -->
-      <img
-        src="/images/LogoNatureInstinct.png"
-        alt="Logo de l'association Nature Instinct"
-        id="logo"
-      />
+      <div class="logo">
+        <a href="/index.html">
+          <img
+            src="/images/LogoNatureInstinct.png"
+            alt="Accueil - Nature Instinct"
+            class="logo"
+          />
+        </a>
+      </div>
       <!-- NAVBAR -->
-      <nav>
+      <nav aria-label="Navigation principale">
         <ul>
-          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/index.html" aria-current>Accueil</a></li>
           <li><a href="/activities.html">Activités</a></li>
           <li><a href="/actualities.html">Actualités</a></li>
           <li><a href="/contact.html">Contact</a></li>
@@ -28,9 +32,9 @@
     </header>
     <main>
       <!-- PRESENTATION -->
-      <section id="Home">
+      <section id="Home" aria-labelledby="home-title">
         <article>
-          <h1>Ensemble, réveillons notre nature</h1>
+          <h1 id="home-title">Ensemble, réveillons notre nature</h1>
           <p>
             Nature Instinct est une association engagée pour la protection et la
             valorisation de l’environnement. Convaincus que chacun possède un
@@ -46,12 +50,12 @@
           <img
             src="/images/images_index/couv.jpg"
             id="cover"
-            alt="Image d'un champs vert"
+            alt="Champ verdoyant illustrant la nature préservée"
           />
         </article>
       </section>
       <!-- TO ACTIVITIES PAGE -->
-      <section class="cards">
+      <section class="cards" aria-labelledby="actions">
         <h2 id="actions">Vos actions feront la différence :</h2>
         <article class="card">
           <h3>Ateliers de sensibilisation</h3>
@@ -59,20 +63,24 @@
             Participez à nos ateliers éducatifs pour mieux comprendre les enjeux
             environnementaux.
           </p>
-          <a href="/activities.html">Nos activités</a>
+          <a href="/activities.html" aria-label="Découvrir les activités"
+            >Nos activités</a
+          >
         </article>
       </section>
 
       <!-- TO ACTUALITIES PAGE -->
-      <section class="cards">
+      <section class="cards" aria-labelledby="projects">
         <h2 id="projects">Suivez nos projets :</h2>
         <article class="card">
           <p>Notre actualité, c'est par ici !</p>
-          <a href="/actualities.html">Nos actualités</a>
+          <a href="/actualities.html" aria-label="Voir les actualités"
+            >Nos actualités</a
+          >
         </article>
       </section>
       <!-- TO CONTACT PAGE -->
-      <section class="cards">
+      <section class="cards" aria-labelledby="together">
         <h2 id="together">Ensemble on va plus loin :</h2>
         <article class="card">
           <h3>Rejoignez-nous</h3>
@@ -80,24 +88,26 @@
             Envie de contribuer ? Découvrez notre page contact et devenez
             bénévole. <br />
           </p>
-          <a href="/contact.html">Formulaire de contact</a>
+          <a href="/contact.html" aria-label="Accéder au formulaire de contact"
+            >Formulaire de contact</a
+          >
         </article>
       </section>
-      <section class="cards">
+      <section class="cards" aria-labelledby="social">
         <article class="card">
-          <h3>Suivez-nous</h3>
+          <h2 id="social">Suivez-nous</h2>
           <p>
             Retrouvez Nature Instinct sur Facebook et Instagram pour suivre nos
             actions.
           </p>
-          <a href="#">
+          <a href="#" aria-label="Facebook Nature Instinct">
             <img
               src="/images/logo-facebook.png"
               alt="Logo Facebook"
               id="facebook"
             />
           </a>
-          <a href="#">
+          <a href="#" aria-label="Instagram Nature Instinct">
             <img
               src="/images/Instagram_icon.png.webp"
               alt="Logo Instagram"
@@ -109,12 +119,14 @@
     </main>
     <footer>
       <p>&copy; 2025 Nature Instinct – Ensemble, on est plusieurs</p>
-      <a href="#">
-        <img src="/images/logo-facebook.png" alt="Logo Facebook" />
-      </a>
-      <a href="#">
-        <img src="/images/Instagram_icon.png.webp" alt="Logo Instagram" />
-      </a>
+      <nav aria-label="Réseaux sociaux">
+        <a href="#">
+          <img src="/images/logo-facebook.png" alt="Logo Facebook" />
+        </a>
+        <a href="#" aria-label="Instagram Nature Instinct">
+          <img src="/images/Instagram_icon.png.webp" alt="Logo Instagram" />
+        </a>
+      </nav>
     </footer>
   </body>
 </html>
